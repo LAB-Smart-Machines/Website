@@ -1,14 +1,16 @@
 @import "reset.css";
-/* @import "font.css"; */
+@import "fonts.css";
 
 body {
-  /*! font-family: Vollkorn, serif; */
-  /*! color: #333; */
-  /*! font-size: 14px; */
-  /*! line-height: 20px; */
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
 }
 
 h1 {
+  font-family: "Abril Fatface", cursive;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 32px;
@@ -17,8 +19,8 @@ h1 {
 }
 
 h2 {
+  font-family: "Abril Fatface", cursive;
   margin: 10px 0px;
-  font-family: Montserrat, sans-serif;
   font-size: 23px;
   line-height: 36px;
   font-weight: 400;
@@ -28,7 +30,6 @@ h2 {
 
 h3 {
   margin: 0px 0px 20px;
-  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -59,7 +60,7 @@ h6 {
 p {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: Vollkorn, serif;
+
   font-size: 15px;
   line-height: 22px;
 }
@@ -71,7 +72,7 @@ p {
   background-color: transparent;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
-  font-family: Montserrat, sans-serif;
+
   color: #333;
   font-size: 19px;
   font-style: italic;
@@ -148,7 +149,7 @@ p {
   border-bottom: 2px solid transparent;
   -webkit-transition: border-color 300ms ease;
   transition: border-color 300ms ease;
-  font-family: Montserrat, sans-serif;
+
   color: #404040;
   font-size: 12px;
   font-weight: 400;
@@ -162,7 +163,7 @@ p {
 .logo-title {
   margin-top: 13px;
   float: left;
-  font-family: Oswald, sans-serif;
+
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
@@ -175,7 +176,7 @@ p {
 
 .main-heading {
   margin-top: 7px;
-  font-family: "Abril Fatface", sans-serif;
+
   color: #fff;
   font-size: 44px;
   line-height: 55px;
@@ -199,7 +200,6 @@ p {
 }
 
 .main-subtitle {
-  font-family: Montserrat, sans-serif;
   color: #39585e;
   font-size: 18px;
   font-style: italic;
@@ -217,7 +217,7 @@ p {
   overflow: visible;
   margin-bottom: 40px;
   float: none;
-  font-family: Montserrat, sans-serif;
+
   color: #333;
   font-size: 16px;
   line-height: 25px;
@@ -260,7 +260,6 @@ p {
   background-image: linear-gradient(180deg, rgba(239, 174, 175, 0.75), #fc6767),
     url("https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade6307fbf83018_footer-bg.jpg");
   background-size: auto, cover;
-  font-family: Vollkorn, serif;
 }
 
 .section.footer {
@@ -282,6 +281,7 @@ p {
   transition: bottom 300ms ease;
   color: #333;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .project-wrapper:hover {
@@ -295,7 +295,7 @@ p {
 
 .role {
   margin-bottom: 16px;
-  font-family: Vollkorn, serif;
+
   font-size: 17px;
   font-style: italic;
 }
@@ -371,7 +371,7 @@ p {
 
 .from {
   margin-bottom: 0px;
-  font-family: Montserrat, sans-serif;
+
   color: #ababab;
   font-size: 14px;
   font-weight: 400;
@@ -394,7 +394,6 @@ p {
 }
 
 .contact-text {
-  font-family: Montserrat, sans-serif;
   color: #212121;
   font-size: 17px;
 }
@@ -477,7 +476,6 @@ p {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
-  font-family: Montserrat, sans-serif;
 }
 
 .project-title {
@@ -498,36 +496,28 @@ p {
 }
 
 .heading {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .text-block {
-  font-family: Montserrat, sans-serif;
 }
 
 .heading-2 {
-  font-family: "Abril Fatface", sans-serif;
   color: #333;
 }
 
 .heading-3 {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .heading-4 {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .heading-5 {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .heading-6 {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .heading-7 {
-  font-family: "Abril Fatface", sans-serif;
 }
 
 .utility-page-wrap {
