@@ -71,6 +71,9 @@ class Header extends React.Component {
               <a className="nav-link w-nav-link">CONTACTO</a>
             </Link>
           </header>
+          <div class="menu-button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
+          </div>
         </div>
       </div>
     );
