@@ -11,7 +11,7 @@ const Footer = ({ pathname }) => (
         <div class="w-col w-col-4">
           <div class="icon-wrapper">
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade63162af82ff6_map-icon.png"
+              src="../static/images/map-marker-alt-solid.svg"
               alt=""
               width="44"
             ></img>
@@ -25,17 +25,13 @@ const Footer = ({ pathname }) => (
               Av. Túpac Amaru, Puerta Nº 5 Pabellón R4, Lima Perú
             </a>
           </p>
-          <img
-            src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dd8ed2505da5845eb96f236_logo_ctic_oficial_2.png"
-            alt=""
-            width="197"
-          ></img>
+          <img src="../static/images/ctci_oficial.png" alt="" width="197"></img>
         </div>
 
         <div class="w-col w-col-4">
           <div class="icon-wrapper _2">
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade632841f82ffb_mail-icon.png"
+              src="../static/images/envelope-regular.svg"
               alt=""
               width="70"
             ></img>
@@ -56,7 +52,7 @@ const Footer = ({ pathname }) => (
         <div class="w-col w-col-4">
           <div class="icon-wrapper _2">
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade6367a1f82ff5_heart-icon.png"
+              src="../static/images/heart-regular.svg"
               alt=""
               width="68"
             ></img>
