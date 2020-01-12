@@ -64,16 +64,17 @@ const Footer = ({ pathname }) => (
             class="social-wrapper contact-text w-inline-block w-clearfix"
           >
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade63cbfaf83008_facebook-icon_black.svg"
+              src="../static/images/facebook-square-brands.svg"
               alt=""
               class="social-icon"
               width="14"
+              color="#fff"
             ></img>
             <div class="social-link-text">Facebook</div>
           </a>
           <a href="#" class="social-wrapper contact-text w-inline-block">
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade633c76f8300e_twitter-icon_black.svg"
+              src="../static/images/twitter-square-brands.svg"
               alt=""
               class="social-icon"
               width="14"
@@ -82,7 +83,7 @@ const Footer = ({ pathname }) => (
           </a>
           <a href="#" class="social-wrapper contact-text w-inline-block">
             <img
-              src="https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade63e4c9f8300c_linkdin-icon-black.svg"
+              src="../static/images/linkedin-brands.svg"
               alt=""
               class="social-icon"
               width="14"

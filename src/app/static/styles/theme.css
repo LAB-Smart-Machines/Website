@@ -382,6 +382,7 @@ p {
   height: 95px;
   margin-bottom: 10px;
   padding-top: 13px;
+  filter: brightness(0) invert(1);
 }
 
 .icon-wrapper._2 {
@@ -427,6 +428,7 @@ p {
 .social-icon {
   margin-top: -6px;
   margin-right: 9px;
+  filter: brightness(0) invert(1);
 }
 
 .field {
