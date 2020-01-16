@@ -2,6 +2,7 @@ import * as React from "react";
 import App from "../components/App";
 import Columna from "../components/Columna";
 import Seccion from "../components/Seccion";
+import "../static/styles/theme.css";
 
 export default () => (
   <App>
@@ -40,17 +41,17 @@ export default () => (
           <Columna
             titulo={"Cansat Rover"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_cansat_rover.jpeg"}
+            img={"../static/images/ctic_cansat_rover.jpeg"}
           />
           <Columna
             titulo={"GLOBO ESTRATOSFÉRICO"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
           />
           <Columna
             titulo={"cansat telemetry"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_cansat_telemetry.jpeg"}
+            img={"../static/images/ctic_cansat_telemetry.jpeg"}
           />
         </div>
         {/* segunda fila */}
@@ -58,17 +59,17 @@ export default () => (
           <Columna
             titulo={"WARBOT"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_warbot.jpeg"}
+            img={"../static/images/ctic_warbot.jpeg"}
           />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
           />
           <Columna
-            titulo={"ccohetes"}
+            titulo={"cohetes"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_cohetes.jpeg"}
+            img={"../static/images/ctic_cohetes.jpeg"}
           />
         </div>
         {/* tercera fila */}
@@ -76,17 +77,17 @@ export default () => (
           <Columna
             titulo={"WARBOT"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_warbot.jpeg"}
+            img={"../static/images/ctic_warbot.jpeg"}
           />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
           />
           <Columna
             titulo={"ccohetes"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctci_cohetes.jpeg"}
+            img={"../static/images/ctic_cohetes.jpeg"}
           />
         </div>
       </div>

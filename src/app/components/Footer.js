@@ -1,8 +1,7 @@
 import * as React from "react";
-import "../static/styles/theme.css";
 
-const Footer = ({ pathname }) => (
-  <div id="contact" class="section contact">
+const Footer = () => (
+  <footer id="contact" class="section contact">
     <div class="w-container">
       <h2 class="heading-4">Preguntas?</h2>
 
@@ -12,7 +11,7 @@ const Footer = ({ pathname }) => (
           <div class="icon-wrapper">
             <img
               src="../static/images/map-marker-alt-solid.svg"
-              alt=""
+              alt="icono mapa"
               width="44"
             ></img>
           </div>
@@ -25,18 +24,25 @@ const Footer = ({ pathname }) => (
               Av. Túpac Amaru, Puerta Nº 5 Pabellón R4, Lima Perú
             </a>
           </p>
-          <img src="../static/images/ctci_oficial.png" alt="" width="197"></img>
+          <a href="https://www.ctic.uni.edu.pe/" target="_blank">
+            <img
+              src="../static/images/ctic_oficial.png"
+              alt=""
+              width="197"
+              alt="logo ctic"
+            ></img>
+          </a>
         </div>
 
         <div class="w-col w-col-4">
           <div class="icon-wrapper _2">
             <img
               src="../static/images/envelope-regular.svg"
-              alt=""
+              alt="icono cartaa"
               width="70"
             ></img>
           </div>
-          <h3 class="heading-6">email</h3>
+          <h3 class="heading-5">email</h3>
           <p class="contact-text">
             <a
               href="mailto:contact@minimal.com?subject=Hi!"
@@ -45,7 +51,6 @@ const Footer = ({ pathname }) => (
             >
               smart.machines@uni.edu.pe
             </a>
-            <a href="#" class="link"></a>
           </p>
         </div>
 
@@ -53,47 +58,37 @@ const Footer = ({ pathname }) => (
           <div class="icon-wrapper _2">
             <img
               src="../static/images/heart-regular.svg"
-              alt=""
+              alt="icono corazon"
               width="68"
             ></img>
           </div>
 
-          <h3 class="heading-7">Sociales</h3>
-          <a
-            href="#"
-            class="social-wrapper contact-text w-inline-block w-clearfix"
-          >
-            <img
-              src="../static/images/facebook-square-brands.svg"
-              alt=""
-              class="social-icon"
-              width="14"
-              color="#fff"
-            ></img>
-            <div class="social-link-text">Facebook</div>
-          </a>
-          <a href="#" class="social-wrapper contact-text w-inline-block">
-            <img
-              src="../static/images/twitter-square-brands.svg"
-              alt=""
-              class="social-icon"
-              width="14"
-            ></img>
-            <div class="social-link-text">Twitter</div>
-          </a>
-          <a href="#" class="social-wrapper contact-text w-inline-block">
-            <img
-              src="../static/images/linkedin-brands.svg"
-              alt=""
-              class="social-icon"
-              width="14"
-            ></img>
-            <div class="social-link-text">Linkedin</div>
-          </a>
+          <h3 class="heading-5">Sociales</h3>
+          <Icono texto={"Github"} icono={"github-square"} />
+          <Icono texto={"Facebook"} icono={"facebook-square"} />
+          <Icono texto={"Twitter"} icono={"twitter-square"} />
+          <Icono texto={"LinkedIn"} icono={"linkedin"} />
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;
+
+// stateless componente
+const Icono = ({ texto, icono }) => (
+  <a
+    href="#"
+    class="social-wrapper contact-text w-inline-block"
+    target="_blank"
+  >
+    <img
+      src={`../static/images/${icono}-brands.svg`}
+      alt={`icono ${icono}`}
+      class="social-icon"
+      width="14"
+    ></img>
+    <div class="social-link-text">{texto}</div>
+  </a>
+);

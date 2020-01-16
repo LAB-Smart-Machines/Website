@@ -9,7 +9,7 @@ class Columna extends React.Component {
             <img
               src={this.props.img}
               sizes="(max-width: 479px) 96vw, (max-width: 767px) 29vw, (max-width: 991px) 229.3333282470703px, 300px"
-              alt=""
+              alt={`foto de proyecto ${this.props.titulo}`}
             ></img>
             <div className="project-info">
               <h3 className="project-title">{this.props.titulo}</h3>

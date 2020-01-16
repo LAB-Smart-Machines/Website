@@ -2,7 +2,7 @@
 @import "fonts.css";
 
 body {
-  color: #333;
+  color: #040406;
   font-size: 16px;
   line-height: 20px;
   font-family: "Raleway", sans-serif;
@@ -209,8 +209,8 @@ p {
   padding-top: 69px;
   padding-bottom: 69px;
   background-color: #fc6767;
-  color: #fff;
   text-align: center;
+  color: #040406;
 }
 
 .about-text {
@@ -218,7 +218,6 @@ p {
   margin-bottom: 40px;
   float: none;
 
-  color: #333;
   font-size: 16px;
   line-height: 25px;
   text-decoration: none;
@@ -504,7 +503,7 @@ p {
 }
 
 .heading-2 {
-  color: #333;
+  color: #040406;
 }
 
 .heading-3 {
@@ -514,6 +513,7 @@ p {
 }
 
 .heading-5 {
+  font-weight: 800;
 }
 
 .heading-6 {
