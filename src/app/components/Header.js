@@ -57,8 +57,8 @@ const Header = () => (
           <a className="nav-link w-nav-link">CONTACTO</a>
         </Link>
       </header>
-      <div class="menu-button w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+      <div className="menu-button w-nav-button">
+        <div className="w-icon-nav-menu"></div>
       </div>
     </div>
   </div>
