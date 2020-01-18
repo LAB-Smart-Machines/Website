@@ -5,7 +5,7 @@ import Seccion from "../components/Seccion";
 import "../static/styles/theme.css";
 
 export default () => (
-  <App>
+  <App title={"test"}>
     <Seccion
       claseSeccion={"header"}
       claseHeading={"main-heading"}

@@ -10,7 +10,7 @@ const Header = () => (
     className="navbar w-nav"
   >
     <div className="w-container">
-      <a href="#" className="brand-block w-clearfix w-nav-brand">
+      <a href="/" className="brand-block w-clearfix w-nav-brand">
         <img
           className="logo-img"
           src={"../static/images/smart_machines_ctic_logo.png"}
@@ -19,41 +19,21 @@ const Header = () => (
           width="136"
         ></img>
       </a>
-      {/* {this.state.width} */}
+      {/* https://nextjs.org/docs/api-reference/next/link */}
       <header role="navigation" className="nav-menu w-nav-menu">
-        <Link
-          href="/"
-          className="nav-link w-nav-link"
-          style="max-width: 940px;"
-        >
+        <Link href="/">
           <a className="nav-link w-nav-link">INICIO</a>
-        </Link>{" "}
-        <Link
-          href="#projects"
-          className="nav-link w-nav-link"
-          style="max-width: 940px;"
-        >
+        </Link>
+        <Link href="/#projects">
           <a className="nav-link w-nav-link">PROYECTOS</a>
-        </Link>{" "}
-        <Link
-          href="/about"
-          className="nav-link w-nav-link"
-          style="max-width: 940px;"
-        >
+        </Link>
+        <Link href="/Miembros">
           <a className="nav-link w-nav-link">MIEMBROS</a>
-        </Link>{" "}
-        <Link
-          href="/about"
-          className="nav-link w-nav-link"
-          style="max-width: 940px;"
-        >
+        </Link>
+        <Link href="/Publicaciones">
           <a className="nav-link w-nav-link">PUBLICACIONES</a>
-        </Link>{" "}
-        <Link
-          href="#contact"
-          className="nav-link w-nav-link"
-          style="max-width: 940px;"
-        >
+        </Link>
+        <Link href="#contact">
           <a className="nav-link w-nav-link">CONTACTO</a>
         </Link>
       </header>

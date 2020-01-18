@@ -108,10 +108,10 @@ p {
       from(rgba(239, 174, 175, 0.85)),
       to(#fc6767)
     ),
-    url("https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7a0e152f69f9d4b8e171c_CTICUNI.jpg");
+    url("/static/images/CTICUNI-3.jpg");
   background-image: linear-gradient(180deg, rgba(239, 174, 175, 0.85), #fc6767),
-    url("https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7a0e152f69f9d4b8e171c_CTICUNI.jpg");
-  background-position: 0px 0px, 50% 75%;
+    url("/static/images/CTICUNI-3.jpg");
+  background-position: 0px 0px, 50% 55%;
   background-size: auto, cover;
   color: #fff;
   text-align: center;
@@ -157,7 +157,7 @@ p {
 }
 
 .nav-link:hover {
-  border-bottom-color: #7ec4bd;
+  border-bottom-color: #fc6767;
 }
 
 .logo-title {
@@ -255,9 +255,9 @@ p {
       from(rgba(239, 174, 175, 0.75)),
       to(#fc6767)
     ),
-    url("https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade6307fbf83018_footer-bg.jpg");
+    url("/static/images/CTICUNI-2.jpg");
   background-image: linear-gradient(180deg, rgba(239, 174, 175, 0.75), #fc6767),
-    url("https://uploads-ssl.webflow.com/5dc7915d6ade6389d9f82fe8/5dc7915d6ade6307fbf83018_footer-bg.jpg");
+    url("/static/images/CTICUNI-2.jpg");
   background-size: auto, cover;
 }
 
@@ -395,7 +395,8 @@ p {
 
 .contact-text {
   color: #212121;
-  font-size: 17px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .link {

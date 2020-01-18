@@ -64,10 +64,28 @@ const Footer = () => (
           </div>
 
           <h3 className="heading-5">Sociales</h3>
-          <Icono texto={"Github"} icono={"github-square"} />
-          <Icono texto={"Facebook"} icono={"facebook-square"} />
-          <Icono texto={"Twitter"} icono={"twitter-square"} />
-          <Icono texto={"LinkedIn"} icono={"linkedin"} />
+          <Icono
+            texto={"Github"}
+            icono={"github-square"}
+            url={"https://github.com/LAB-Smart-Machines"}
+          />
+          <Icono
+            texto={"Facebook"}
+            icono={"facebook-square"}
+            url={"https://www.facebook.com/labsmartmachines/"}
+          />
+          <Icono
+            texto={"Twitter"}
+            icono={"twitter-square"}
+            url={"https://twitter.com/CticUni"}
+          />
+          <Icono
+            texto={"LinkedIn"}
+            icono={"linkedin"}
+            url={
+              "https://www.linkedin.com/company/laboratorio-smart-machines-ctic-uni/"
+            }
+          />
         </div>
       </div>
     </div>
@@ -77,9 +95,9 @@ const Footer = () => (
 export default Footer;
 
 // stateless componente
-const Icono = ({ texto, icono }) => (
+const Icono = ({ texto, icono, url }) => (
   <a
-    href="#"
+    href={url}
     className="social-wrapper contact-text w-inline-block"
     target="_blank"
   >

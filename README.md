@@ -1,27 +1,27 @@
-Usando ejemplo de NextJS
+Usando ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting)
 
-[Diseno](https://smart-machines.webflow.io/)
+- [Diseño](https://smart-machines.webflow.io/)
+- Iconos FontAwesome
+- figuras Undraw
 
-# ------------------------------------
+# Con Firebase Hosting example
 
-# With Firebase Hosting example
+## Como usar
 
-## How to use
+**Usando `create-next-app`**
 
-**Using `create-next-app`**
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+Ejecutar [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) con [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) o con npm :
 
 ```bash
-npx create-next-app --example with-firebase-hosting with-firebase-hosting-app
-# or
+npm create-next-app --example with-firebase-hosting with-firebase-hosting-app
+# o
 yarn create next-app --example with-firebase-hosting with-firebase-hosting-app
 ```
 
 <details>
-<summary><b>Download manually</b></summary>
+<summary><b>Bajalo manualmente</b></summary>
 
-Download the example:
+Baja el ejemplo:
 
 ```bash
 curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-firebase-hosting
@@ -31,42 +31,42 @@ cd with-firebase-hosting
 </details>
 
 <details>
-<summary><b>Set up firebase</b></summary>
+<summary><b>Preparar firebase</b></summary>
 
-- install Firebase Tools: `npm i -g firebase-tools`
-- create a project through the [firebase web console](https://console.firebase.google.com/)
-- grab the projects ID from the web consoles URL: `https://console.firebase.google.com/project/<projectId>`
-- update the `.firebaserc` default project ID to the newly created project
-- login to the Firebase CLI tool with `firebase login`
+- instalar Firebase Tools: `npm i -g firebase-tools`
+- crear un proyecto a traves del [firebase web console](https://console.firebase.google.com/)
+- copiar ID del proyecto de consola en este URL: `https://console.firebase.google.com/project/<projectId>`
+- actualizar el `.firebaserc` ID defecto `"web-id-aqui"` al el nuevo proyecto
+- iniciar sesion al Firebase CLI tool con `firebase login`
 
 </details>
 
 <details>
-<summary><b>Install Project</b></summary>
+<summary><b>Instalar Proyecto</b></summary>
 
 ```bash
 npm install
 ```
 
-#### Run Next.js development:
+#### Ejecutar Next.js development:
 
 ```bash
 npm run dev
 ```
 
-#### Run Firebase locally for testing:
+#### Ejecutar Firebase localmente para testing:
 
 ```
 npm run serve
 ```
 
-#### Deploy it to the cloud with Firebase:
+#### Despliegue en la nube (cloud) con Firebase:
 
 ```bash
 npm run deploy
 ```
 
-#### Clean dist folder
+#### Limpiar el folder dist
 
 ```bash
 npm run clean
