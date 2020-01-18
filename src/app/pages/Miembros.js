@@ -44,6 +44,24 @@ export default () => (
             img={"../static/images/undraw_profile_pic_ic5t.svg"}
           />
         </div>
+        {/* tercera fila */}
+        <div className="w-row">
+          <Miembro
+            titulo={"Nombre"}
+            subtitulo={"subtitulo"}
+            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+          />
+          <Miembro
+            titulo={"Nombre"}
+            subtitulo={"subtitulo"}
+            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+          />
+          <Miembro
+            titulo={"Nombre"}
+            subtitulo={"subtitulo"}
+            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+          />
+        </div>
       </div>
     </div>
   </App>
@@ -57,8 +75,8 @@ const Miembro = ({ img, titulo, subtitulo }) => (
         sizes="(max-width: 479px) 96vw, (max-width: 767px) 29vw, (max-width: 991px) 229.3333282470703px, 300px"
         alt={`foto de proyecto ${titulo}`}
       ></img>
-      <div className="project-info">
-        <h2 className="project-title">{titulo}</h2>
+      <div className="miembro-info">
+        <h2 className="miembro-title">{titulo}</h2>
         <div>{subtitulo}</div>
       </div>
     </div>

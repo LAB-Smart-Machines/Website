@@ -27,7 +27,7 @@ export default () => (
       claseHeading={"heading-2"}
       claseSub={"about-text"}
       titulo={"Historia"}
-      subTexto={historia_texto}
+      subTexto={<Historia_Texto />}
       botonHref={"#contact"}
       botonTexto={"Contacto"}
     />
@@ -95,25 +95,6 @@ export default () => (
   </App>
 );
 
-const historia_texto = `El 22 de setiembre del 2011 un grupo de 10 estudiantes de la Universidad Nacional de Ingeniería se juntan con el
-propósito de realizar proyectos multidisciplinarios. Para el logro de
-ello deciden formar el capítulo de
-AESS (AEROSPACIAL AND ELECTRONIC SYSTEM SOCIETY),
-perteneciente a la sociedad IEEE. Es así como en el
-evento de UNI-empresa, este grupo se contacta con Fredy Calle y Renato
-Miyagusuku, investigadores que pertenecían al proyecto satelital
-Chasqui I, quienes aceptan brindar
-asesorías y capacitaciones, dentro del área Aeroespacial. En enero del
-2012, Fredy les presenta la idea de incursionar al mundo tecnológico a
-través de la metodología CANSAT. Tomado la experiencia que
-compartieron en Japón. Es de esta forma que se da inicio a los
-primeros proyectos: el perfilador de vientos, Rover 1 (Sistema
-Electrónico y Mecánico) y Rover 2 (Sistema de Navegación y Autonomía).
-En la actualidad se desarrollan los siguientes proyectos: robótica
-aplicada, cansat telemetry, cansat rover, rover challenge, cohete
-experimental y globo estratosférico con fines de participación
-internacional y publicación científica.`;
-
 const mision_texto = `El laboratorio de investigación Smart machines es un centro cuyo
 propósito es desarrollar investigación básica y aplicada en el campo
 aeroespacial y robótica aplicada, que contribuya a los esfuerzos de la
@@ -127,3 +108,33 @@ const subtitulo_texto = `Smart Machines es un laboratorio de investigación de e
 liderazgo nacional y reconocimiento internacional creciente en el
 campo aeroespacial y robótica aplicada, ocupando un lugar central en
 el desarrollo de la ciencia y tecnología de nuestro país.`;
+
+const Historia_Texto = () => (
+  <p class="about-text">
+    El 22 de setiembre del 2011 un grupo de 10 estudiantes de la{" "}
+    <mark>
+      <a className="mark-a" href="https://www.uni.edu.pe/">
+        Universidad Nacional de Ingeniería
+      </a>
+    </mark>{" "}
+    se juntan con el propósito de realizar proyectos multidisciplinarios. Para
+    el logro de ello deciden formar el capítulo de AESS (AEROSPACIAL AND
+    ELECTRONIC SYSTEM SOCIETY), perteneciente a la sociedad IEEE. Es así como en
+    el evento de UNI-empresa, este grupo se contacta con Fredy Calle y Renato
+    Miyagusuku, investigadores que pertenecían al proyecto satelital Chasqui I,
+    quienes aceptan brindar asesorías y capacitaciones, dentro del área
+    Aeroespacial. En enero del 2012, Fredy les presenta la idea de incursionar
+    al mundo tecnológico a través de la metodología{" "}
+    <a className="mark-a" href="http://www.cansatcompetition.com/">
+      <mark>CANSAT</mark>
+    </a>
+    . Tomado la experiencia que compartieron en Japón. <br />
+    <br />
+    Es de esta forma que se da inicio a los primeros proyectos: el perfilador de
+    vientos, Rover 1 (Sistema Electrónico y Mecánico)y Rover 2 (Sistema de
+    Navegación y Autonomía). En la actualidad se desarrollan los siguientes
+    proyectos: robótica aplicada, cansat telemetry, cansat rover, rover
+    challenge, cohete experimental y globo estratosférico con fines de
+    participación internacional y publicación científica.
+  </p>
+);

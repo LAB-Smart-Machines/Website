@@ -4,7 +4,7 @@ Usando ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/
 - Iconos FontAwesome
 - figuras Undraw
 
-# Con Firebase Hosting example
+# Hosting con Firebase
 
 ## Como usar
 

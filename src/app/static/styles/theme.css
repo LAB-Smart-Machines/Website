@@ -7,6 +7,7 @@ body {
   line-height: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 h1 {
@@ -64,16 +65,26 @@ p {
   font-size: 15px;
   line-height: 22px;
 }
+mark {
+  margin: 0.2em auto;
+  line-height: 0.85em;
+  background-color: #040406;
+  color: #fff;
+}
+.mark-a {
+  color: #fff;
+}
 
 .button {
   display: inline-block;
   padding: 15px 33px;
-  border: 1px solid #333;
+  border: 1px solid #040406;
   background-color: transparent;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
-
-  color: #333;
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+  color: #040406;
   font-size: 19px;
   font-style: italic;
   font-weight: 900;
@@ -247,7 +258,7 @@ p {
 .section.contact {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #333;
+  background-color: #040406;
   background-image: -webkit-gradient(
       linear,
       left top,
@@ -278,7 +289,7 @@ p {
   display: block;
   -webkit-transition: bottom 300ms ease;
   transition: bottom 300ms ease;
-  color: #333;
+  color: #040406;
   text-decoration: none;
   font-size: 14px;
 }
@@ -338,7 +349,7 @@ p {
 }
 
 .arrow:hover {
-  color: #333;
+  color: #040406;
 }
 
 .testimonial-slide {
@@ -481,6 +492,16 @@ p {
 }
 
 .project-title {
+  margin-bottom: 4px;
+}
+
+.miembro-info {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.miembro-title {
   margin-bottom: 4px;
 }
 
