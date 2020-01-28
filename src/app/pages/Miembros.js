@@ -1,6 +1,6 @@
 import * as React from "react";
 import App from "../components/App";
-import "../static/styles/theme.css";
+import profile_pic from "../images/undraw_profile_pic_ic5t.svg";
 
 export default () => (
   <App>
@@ -13,17 +13,17 @@ export default () => (
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
         </div>
         {/* segunda fila */}
@@ -31,17 +31,17 @@ export default () => (
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
         </div>
         {/* tercera fila */}
@@ -49,17 +49,17 @@ export default () => (
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
           <Miembro
             titulo={"Nombre"}
             subtitulo={"subtitulo"}
-            img={"../static/images/undraw_profile_pic_ic5t.svg"}
+            img={profile_pic}
           />
         </div>
       </div>

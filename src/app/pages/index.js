@@ -2,10 +2,14 @@ import * as React from "react";
 import App from "../components/App";
 import Columna from "../components/Columna";
 import Seccion from "../components/Seccion";
-import "../static/styles/theme.css";
+import telemetry from "../images/ctic_cansat_telemetry.jpeg";
+import rover from "../images/ctic_cansat_rover.jpeg";
+import globo_estratosferico from "../images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg";
+import warbot from "../images/ctic_warbot.jpeg";
+import cohetes from "../public/static/images/ctic_cohetes.jpeg";
 
 export default () => (
-  <App title={"test"}>
+  <App>
     <Seccion
       claseSeccion={"header"}
       claseHeading={"main-heading"}
@@ -41,54 +45,38 @@ export default () => (
           <Columna
             titulo={"Cansat Rover"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctic_cansat_rover.jpeg"}
+            img={rover}
           />
           <Columna
             titulo={"GLOBO ESTRATOSFÉRICO"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={globo_estratosferico}
           />
           <Columna
             titulo={"cansat telemetry"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctic_cansat_telemetry.jpeg"}
+            img={telemetry}
           />
         </div>
         {/* segunda fila */}
         <div className="w-row">
-          <Columna
-            titulo={"WARBOT"}
-            subtitulo={"subtitulo"}
-            img={"../static/images/ctic_warbot.jpeg"}
-          />
+          <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={globo_estratosferico}
           />
-          <Columna
-            titulo={"cohetes"}
-            subtitulo={"subtitulo"}
-            img={"../static/images/ctic_cohetes.jpeg"}
-          />
+          <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
         </div>
         {/* tercera fila */}
         <div className="w-row">
-          <Columna
-            titulo={"WARBOT"}
-            subtitulo={"subtitulo"}
-            img={"../static/images/ctic_warbot.jpeg"}
-          />
+          <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
-            img={"../static/images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg"}
+            img={globo_estratosferico}
           />
-          <Columna
-            titulo={"ccohetes"}
-            subtitulo={"subtitulo"}
-            img={"../static/images/ctic_cohetes.jpeg"}
-          />
+          <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
         </div>
       </div>
     </div>
@@ -110,7 +98,7 @@ campo aeroespacial y robótica aplicada, ocupando un lugar central en
 el desarrollo de la ciencia y tecnología de nuestro país.`;
 
 const Historia_Texto = () => (
-  <p class="about-text">
+  <p className="about-text">
     El 22 de setiembre del 2011 un grupo de 10 estudiantes de la{" "}
     <mark>
       <a className="mark-a" href="https://www.uni.edu.pe/">

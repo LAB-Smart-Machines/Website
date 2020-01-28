@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
-
+import logo from "../images/smart_machines_ctic_logo.png";
 // stateless componente
-const Header = () => (
+const Header = ({ pathname }) => (
   <div
     data-collapse="medium"
     data-animation="default"
@@ -13,7 +13,7 @@ const Header = () => (
       <a href="/" className="brand-block w-clearfix w-nav-brand">
         <img
           className="logo-img"
-          src={"../static/images/smart_machines_ctic_logo.png"}
+          src={logo}
           alt="regresar al inicio"
           sizes="(max-width: 767px) 50px, 136px"
           width="136"
@@ -24,13 +24,16 @@ const Header = () => (
         <Link href="/">
           <a className="nav-link w-nav-link">INICIO</a>
         </Link>
+        {/* <Link href="/about">
+          <a className={pathname === "/about" ? "is-active" : ""}>about</a>
+        </Link> */}
         <Link href="/#projects">
           <a className="nav-link w-nav-link">PROYECTOS</a>
         </Link>
-        <Link href="/Miembros">
+        <Link href="/miembros">
           <a className="nav-link w-nav-link">MIEMBROS</a>
         </Link>
-        <Link href="/Publicaciones">
+        <Link href="/publicaciones">
           <a className="nav-link w-nav-link">PUBLICACIONES</a>
         </Link>
         <Link href="#contact">

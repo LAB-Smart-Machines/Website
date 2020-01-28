@@ -18,11 +18,17 @@ const App = ({ children }) => (
         sizes="192x192"
         href="../static/images/favicon/favicon-32x32.png"
       ></link>
+      <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,500&display=swap"
+        rel="stylesheet"
+      />
+      >
     </Head>
 
     <main>
       <Header />
       {children}
+      {console.log(children)}
       <Footer />
     </main>
   </React.Fragment>

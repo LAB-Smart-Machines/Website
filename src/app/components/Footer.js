@@ -1,4 +1,7 @@
 import * as React from "react";
+import corazon from "../images/heart-regular.svg";
+import marcador from "../images/map-marker-alt-solid.svg";
+import carta from "../images/envelope-regular.svg";
 
 const Footer = () => (
   <footer id="contact" className="section contact">
@@ -9,11 +12,7 @@ const Footer = () => (
       <div className="w-row">
         <div className="w-col w-col-4">
           <div className="icon-wrapper">
-            <img
-              src="../static/images/map-marker-alt-solid.svg"
-              alt="icono mapa"
-              width="44"
-            ></img>
+            <img src={marcador} alt="icono mapa" width="44"></img>
           </div>
           <h3 className="heading-5">direccion</h3>
           <p className="contact-text">
@@ -36,11 +35,7 @@ const Footer = () => (
 
         <div className="w-col w-col-4">
           <div className="icon-wrapper _2">
-            <img
-              src="../static/images/envelope-regular.svg"
-              alt="icono cartaa"
-              width="70"
-            ></img>
+            <img src={carta} alt="icono carta" width="70"></img>
           </div>
           <h3 className="heading-5">email</h3>
           <p className="contact-text">
@@ -56,11 +51,7 @@ const Footer = () => (
 
         <div className="w-col w-col-4">
           <div className="icon-wrapper _2">
-            <img
-              src="../static/images/heart-regular.svg"
-              alt="icono corazon"
-              width="68"
-            ></img>
+            <img src={corazon} alt="icono corazon" width="68"></img>
           </div>
 
           <h3 className="heading-5">Sociales</h3>
@@ -102,7 +93,7 @@ const Icono = ({ texto, icono, url }) => (
     target="_blank"
   >
     <img
-      src={`../static/images/${icono}-brands.svg`}
+      src={require(`../images/${icono}-brands.svg`)}
       alt={`icono ${icono}`}
       className="social-icon"
       width="14"
