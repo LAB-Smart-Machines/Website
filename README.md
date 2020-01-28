@@ -1,27 +1,27 @@
-# With Firebase Hosting example
+Usando ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting)
 
-The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
+- [Diseño](https://smart-machines.webflow.io/)
+- Iconos FontAwesome
+- figuras Undraw
 
-This is based off of the work at https://github.com/geovanisouza92/serverless-firebase & https://github.com/jthegedus/firebase-functions-next-example as described [here](https://medium.com/@jthegedus/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2).
+# Hosting con Firebase
 
-If you're having issues, feel free to tag @jthegedus in the [issue you create on the next.js repo](https://github.com/zeit/next.js/issues/new)
+## Como usar
 
-## How to use
+**Usando `create-next-app`**
 
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Ejecutar [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) con [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) o con npm :
 
 ```bash
-npm init next-app --example with-firebase-hosting with-firebase-hosting-app
-# or
+npm create-next-app --example with-firebase-hosting with-firebase-hosting-app
+# o
 yarn create next-app --example with-firebase-hosting with-firebase-hosting-app
 ```
 
 <details>
-<summary><b>Download manually</b></summary>
+<summary><b>Bajalo manualmente</b></summary>
 
-Download the example:
+Baja el ejemplo:
 
 ```bash
 curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-firebase-hosting
@@ -31,48 +31,56 @@ cd with-firebase-hosting
 </details>
 
 <details>
-<summary><b>Set up firebase</b></summary>
+<summary><b>Preparar firebase</b></summary>
 
-- install Firebase Tools: `npm i -g firebase-tools`
-- create a project through the [firebase web console](https://console.firebase.google.com/)
-- grab the projects ID from the web consoles URL: `https://console.firebase.google.com/project/<projectId>`
-- update the `.firebaserc` default project ID to the newly created project
-- login to the Firebase CLI tool with `firebase login`
+- instalar Firebase Tools: `npm i -g firebase-tools`
+- crear un proyecto a traves del [firebase web console](https://console.firebase.google.com/)
+- copiar ID del proyecto de consola en este URL: `https://console.firebase.google.com/project/<projectId>`
+- actualizar el `.firebaserc` ID defecto `"web-id-aqui"` al el nuevo proyecto
+- iniciar sesion al Firebase CLI tool con `firebase login`
 
 </details>
 
 <details>
-<summary><b>Install Project</b></summary>
+<summary><b>Instalar Proyecto</b></summary>
 
 ```bash
 npm install
 ```
 
-#### Run Next.js development:
+#### Ejecutar Next.js development:
 
 ```bash
 npm run dev
 ```
 
-#### Run Firebase locally for testing:
+#### Ejecutar Firebase localmente para testing:
 
 ```
 npm run serve
 ```
 
-#### Deploy it to the cloud with Firebase:
+#### Despliegue en la nube (cloud) con Firebase:
 
 ```bash
 npm run deploy
 ```
 
-#### Clean dist folder
+#### Limpiar el folder dist
 
 ```bash
 npm run clean
 ```
 
 </details>
+
+## The idea behind the example
+
+The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
+
+This is based off of the work at https://github.com/geovanisouza92/serverless-firebase & https://github.com/jthegedus/firebase-functions-next-example as described [here](https://medium.com/@jthegedus/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2).
+
+If you're having issues, feel free to tag @jthegedus in the [issue you create on the next.js repo](https://github.com/zeit/next.js/issues/new)
 
 ## Important
 
@@ -104,10 +112,10 @@ If using `_app.js` you may receive the following error on your deployed Cloud Fu
 
 Despite next.js having `@babel/runtime` as a dependency, you must install it as a dependency directly in this project.
 
-
 ### Issues
+
 - [object Module] in css files with svg files
-https://github.com/cyrilwanner/next-optimized-images/issues/124
+  https://github.com/cyrilwanner/next-optimized-images/issues/124
 
 - Firebase is retuning 404 for files in the /static folder
-https://github.com/zeit/next.js/issues/5944
+  https://github.com/zeit/next.js/issues/5944
