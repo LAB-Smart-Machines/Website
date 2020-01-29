@@ -2,6 +2,7 @@ import * as React from "react";
 import corazon from "../images/heart-regular.svg";
 import marcador from "../images/map-marker-alt-solid.svg";
 import carta from "../images/envelope-regular.svg";
+import logoCTIC from "../images/ctic_oficial.png";
 
 const Footer = () => (
   <footer id="contact" className="section contact">
@@ -24,12 +25,7 @@ const Footer = () => (
             </a>
           </p>
           <a href="https://www.ctic.uni.edu.pe/" target="_blank">
-            <img
-              src="../static/images/ctic_oficial.png"
-              alt=""
-              width="197"
-              alt="logo ctic"
-            ></img>
+            <img src={logoCTIC} alt="" width="197" alt="logo ctic"></img>
           </a>
         </div>
 

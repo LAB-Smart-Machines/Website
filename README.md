@@ -1,5 +1,7 @@
 Usando ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting)
 
+[Website en progreso](https://smartctci.firebaseapp.com/)
+
 - [Diseño](https://smart-machines.webflow.io/)
 - Iconos FontAwesome
 - figuras Undraw
@@ -74,6 +76,10 @@ npm run clean
 
 </details>
 
+## Variables
+
+https://firebase.google.com/docs/functions/config-env
+
 ## The idea behind the example
 
 The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
@@ -119,3 +125,5 @@ Despite next.js having `@babel/runtime` as a dependency, you must install it as 
 
 - Firebase is retuning 404 for files in the /static folder
   https://github.com/zeit/next.js/issues/5944
+
+https://codeburst.io/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2

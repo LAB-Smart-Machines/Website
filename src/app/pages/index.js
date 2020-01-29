@@ -2,6 +2,7 @@ import * as React from "react";
 import App from "../components/App";
 import Columna from "../components/Columna";
 import Seccion from "../components/Seccion";
+
 import telemetry from "../images/ctic_cansat_telemetry.jpeg";
 import rover from "../images/ctic_cansat_rover.jpeg";
 import globo_estratosferico from "../images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg";
@@ -17,7 +18,7 @@ export default () => (
       titulo={"Laboratorio Smart Machines"}
       subTexto={subtitulo_texto}
     />
-
+    {console.log(process.env)}
     <Seccion
       claseSeccion={"section"}
       claseHeading={"heading"}

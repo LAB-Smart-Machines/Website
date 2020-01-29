@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
+import favicon from "../images/favicon/favicon-32x32.png";
 
 const App = ({ children }) => (
   <React.Fragment>
@@ -13,11 +14,8 @@ const App = ({ children }) => (
         key="viewport"
       />
       {/* <!-- Icon in the highest resolution we need it for --> */}
-      <link
-        rel="icon"
-        sizes="192x192"
-        href="../static/images/favicon/favicon-32x32.png"
-      ></link>
+      <link rel="icon" sizes="192x192" href={favicon}></link>
+      {/* {Google Fonts} */}
       <link
         href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,500&display=swap"
         rel="stylesheet"
@@ -28,7 +26,6 @@ const App = ({ children }) => (
     <main>
       <Header />
       {children}
-      {console.log(children)}
       <Footer />
     </main>
   </React.Fragment>

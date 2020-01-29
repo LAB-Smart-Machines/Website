@@ -1,6 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
 import logo from "../images/smart_machines_ctic_logo.png";
+import DDMenu from "../components/DropdownMenu";
+
 // stateless componente
 const Header = ({ pathname }) => (
   <div
@@ -27,9 +29,10 @@ const Header = ({ pathname }) => (
         {/* <Link href="/about">
           <a className={pathname === "/about" ? "is-active" : ""}>about</a>
         </Link> */}
-        <Link href="/#projects">
+        {/* <Link href="/#projects">
           <a className="nav-link w-nav-link">PROYECTOS</a>
-        </Link>
+        </Link> */}
+        <DDMenu />
         <Link href="/miembros">
           <a className="nav-link w-nav-link">MIEMBROS</a>
         </Link>
@@ -40,9 +43,6 @@ const Header = ({ pathname }) => (
           <a className="nav-link w-nav-link">CONTACTO</a>
         </Link>
       </header>
-      <div className="menu-button w-nav-button">
-        <div className="w-icon-nav-menu"></div>
-      </div>
     </div>
   </div>
 );
