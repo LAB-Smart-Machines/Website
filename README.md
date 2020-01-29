@@ -127,3 +127,5 @@ Despite next.js having `@babel/runtime` as a dependency, you must install it as 
   https://github.com/zeit/next.js/issues/5944
 
 https://codeburst.io/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2
+
+https://github.com/jaydenseric/graphql-react

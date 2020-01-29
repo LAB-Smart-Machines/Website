@@ -18,7 +18,6 @@ export default () => (
       titulo={"Laboratorio Smart Machines"}
       subTexto={subtitulo_texto}
     />
-    {console.log(process.env)}
     <Seccion
       claseSeccion={"section"}
       claseHeading={"heading"}
@@ -99,7 +98,7 @@ campo aeroespacial y robótica aplicada, ocupando un lugar central en
 el desarrollo de la ciencia y tecnología de nuestro país.`;
 
 const Historia_Texto = () => (
-  <p className="about-text">
+  <React.Fragment>
     El 22 de setiembre del 2011 un grupo de 10 estudiantes de la{" "}
     <mark>
       <a className="mark-a" href="https://www.uni.edu.pe/">
@@ -125,5 +124,5 @@ const Historia_Texto = () => (
     proyectos: robótica aplicada, cansat telemetry, cansat rover, rover
     challenge, cohete experimental y globo estratosférico con fines de
     participación internacional y publicación científica.
-  </p>
+  </React.Fragment>
 );
