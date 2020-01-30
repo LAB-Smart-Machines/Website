@@ -435,3 +435,38 @@ mark {
   margin-top: -8px;
   cursor: pointer;
 }
+
+/* README */
+
+.readme h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 7px;
+
+  font-size: 44px;
+  line-height: 55px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.readme ul {
+  font-size: 15px;
+}
+
+.readme h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.readme h4 {
+  font-size: 16px;
+}
+
+.readme a {
+  margin: 0.2em auto;
+  line-height: 0.85em;
+  background-color: #040406;
+  color: #fff;
+}
