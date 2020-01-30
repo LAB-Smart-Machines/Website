@@ -20,9 +20,7 @@ const GraphQLData = ({ queryString, repoString }) => {
     fetchOptionsOverride(options) {
       options.url = "https://api.github.com/graphql";
 
-      options.headers[
-        "Authorization"
-      ] = `Bearer 5f5ca5b93622f7a8d6c83b9219c6012ae4aaf886`;
+      options.headers["Authorization"] = `Bearer `;
     },
 
     // The operation typically contains `query` and sometimes `variables`, but
