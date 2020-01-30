@@ -45,7 +45,7 @@ class Menu extends Component {
           onClick={this.showMenu}
         ></img>
         {this.state.showMenu ? (
-          <ul>
+          <ul className="ul-dropdown">
             <PostLink titulo={"Cansat Rover"} />
             <PostLink titulo={"GLOBO ESTRATOSFÉRICO"} />
             <PostLink titulo={"Cansat Telemtery"} />
@@ -63,7 +63,7 @@ export default Menu;
 
 // https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
 const PostLink = props => (
-  <li>
+  <li className="li-dropdown">
     <a href={`/proyecto?titulo=${props.titulo.toUpperCase()}`}>
       {props.titulo}
     </a>

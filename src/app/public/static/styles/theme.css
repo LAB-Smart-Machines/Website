@@ -373,7 +373,7 @@ mark {
 
 /* menu */
 
-ul {
+.ul-dropdown {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -386,18 +386,18 @@ ul {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-li a {
+.li-dropdown a {
   color: #000;
   text-decoration: none;
 }
-li {
+.li-dropdown {
   padding: 8px 16px;
   border-bottom: 1px solid #e5e5e5;
 }
-li:last-child {
+.li-dropdown:last-child {
   border-bottom: none;
 }
-li:hover {
+.li-dropdown:hover {
   background-color: #e5e5e5;
   color: white;
 }
