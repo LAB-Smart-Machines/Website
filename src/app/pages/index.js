@@ -46,37 +46,62 @@ export default () => (
             titulo={"Cansat Rover"}
             subtitulo={"subtitulo"}
             img={rover}
+            github={"Cansat Rover"}
           />
           <Columna
             titulo={"GLOBO ESTRATOSFÉRICO"}
             subtitulo={"subtitulo"}
             img={globo_estratosferico}
+            github={"GLOBO ESTRATOSFÉRICO"}
           />
           <Columna
             titulo={"cansat telemetry"}
             subtitulo={"subtitulo"}
             img={telemetry}
+            github={"cansat telemetry"}
           />
         </div>
         {/* segunda fila */}
         <div className="w-row">
-          <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
+          <Columna
+            titulo={"WARBOT"}
+            subtitulo={"subtitulo"}
+            img={warbot}
+            github={"Warbot"}
+          />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
             img={globo_estratosferico}
+            github={"bioreactor"}
           />
-          <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
+          <Columna
+            titulo={"cohetes"}
+            subtitulo={"subtitulo"}
+            img={cohetes}
+            github={"cohetes"}
+          />
         </div>
         {/* tercera fila */}
         <div className="w-row">
-          <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
+          <Columna
+            titulo={"WARBOT"}
+            subtitulo={"subtitulo"}
+            img={warbot}
+            github={"Warbot"}
+          />
           <Columna
             titulo={"bioreactor"}
             subtitulo={"subtitulo"}
             img={globo_estratosferico}
+            github={"bioreactor"}
           />
-          <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
+          <Columna
+            titulo={"Test Uno"}
+            subtitulo={"subtitulo"}
+            img={cohetes}
+            github={"testuno"}
+          />
         </div>
       </div>
     </div>
@@ -129,12 +154,12 @@ const Historia_Texto = () => (
 
 const GitHubColumna = ({ data }) => (
   <div className="w-row">
-    <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
-    <Columna
-      titulo={"bioreactor"}
+    <Columna1 titulo={"TestUno"} subtitulo={"subtitulo"} img={warbot} />
+    <Columna1
+      titulo={"bioreactor1"}
       subtitulo={"subtitulo"}
       img={globo_estratosferico}
     />
-    <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
+    <Columna1 titulo={"cohetes1"} subtitulo={"subtitulo"} img={cohetes} />
   </div>
 );

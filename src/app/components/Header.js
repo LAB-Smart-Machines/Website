@@ -26,12 +26,6 @@ const Header = ({ pathname }) => (
         <Link href="/">
           <a className="nav-link w-nav-link">INICIO</a>
         </Link>
-        {/* <Link href="/about">
-          <a className={pathname === "/about" ? "is-active" : ""}>about</a>
-        </Link> */}
-        {/* <Link href="/#projects">
-          <a className="nav-link w-nav-link">PROYECTOS</a>
-        </Link> */}
         <DDMenu />
         <Link href="/miembros">
           <a className="nav-link w-nav-link">MIEMBROS</a>

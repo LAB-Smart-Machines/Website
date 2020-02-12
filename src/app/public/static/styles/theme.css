@@ -437,6 +437,9 @@ mark {
 }
 
 /* README */
+.readme {
+  text-align: initial;
+}
 
 .readme h1 {
   text-transform: uppercase;

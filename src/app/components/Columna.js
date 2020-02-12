@@ -1,11 +1,11 @@
 import * as React from "react";
 import Link from "next/link";
 
-const Columna = ({ img, titulo, subtitulo }) => (
+const Columna = ({ img, titulo, subtitulo, github }) => (
   <div className="w-col w-col-4 w-col-small-4">
     <div className="project-wrapper">
       <a
-        href={`/proyecto?titulo=${titulo.toUpperCase()}`}
+        href={`/proyecto?titulo=${github}`}
         className="project-wrapper w-inline-block"
       >
         <img
