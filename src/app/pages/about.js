@@ -4,8 +4,12 @@ import ReactMarkdown from "react-markdown";
 
 import { GraphQL, GraphQLProvider, useGraphQL } from "graphql-react";
 
+// const functions = require("firebase-functions");
+// const envManager = require("../../functions/utils/getKeys");
+
 // Zero config GraphQL client that manages the cache.
 const graphql = new GraphQL();
+// const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 const GraphQLData = ({ queryString, repoString }) => {
   // The useGraphQL hook can be used just the same for queries or mutations.
@@ -18,9 +22,10 @@ const GraphQLData = ({ queryString, repoString }) => {
     // body is JSON but if there are files in the variables it will be a
     // FormData instance for a GraphQL multipart request.
     fetchOptionsOverride(options) {
-      options.url = "https://api.github.com/graphql";
+      // console.log(functions.config().test.one);
 
-      options.headers["Authorization"] = `Bearer `;
+      options.url = "https://api.github.com/graphql";
+      options.headers["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
     },
 
     // The operation typically contains `query` and sometimes `variables`, but
@@ -69,17 +74,21 @@ const GraphQLData = ({ queryString, repoString }) => {
     // `fetchError`, `httpError`, `parseError` and `graphQLErrors`. A combination
     // of errors is possible, and an error doesn’t necessarily mean data is
     // unavailable.
-    "Error!"
+    "Error"
   );
 };
 
-export default () => (
-  <App>
-    <GraphQLProvider graphql={graphql}>
-      <GraphQLData queryString="vahurtad" repoString="TraderFeed" />
-    </GraphQLProvider>
-  </App>
-);
+const About = () => {
+  return (
+    <App>
+      <GraphQLProvider graphql={graphql}>
+        <GraphQLData queryString="LAB-Smart-Machines" repoString="TestUno" />
+      </GraphQLProvider>
+    </App>
+  );
+};
+
+export default About;
 
 const ReadMe = ({ data }) => (
   <section>

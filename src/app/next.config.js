@@ -1,27 +1,24 @@
+require("dotenv").config();
 const withCSS = require("@zeit/next-css");
 const withOptimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
-const withImages = require('next-images');
+const withImages = require("next-images");
 
-const cssConfig = {distDir: '../../dist/functions/next',};
+const cssConfig = { distDir: "../../dist/functions/next" };
 
 const nextConfiguration = {
-    test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-    loader: "url-loader?limit=100000",
-    distDir: '../../dist/functions/next',
+  test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+  loader: "url-loader?limit=100000",
+  distDir: "../../dist/functions/next"
+};
 
-  }
-
-
-const imagesConfig ={
-  distDir: '../../dist/functions',
-  ignoreTypes: ["svg"],
-
-  
-}
+const imagesConfig = {
+  distDir: "../../dist/functions",
+  ignoreTypes: ["svg"]
+};
 
 const optimizedImagesConfig = {
-  distDir: '../../dist/functions/next',
+  distDir: "../../dist/functions/next",
   inlineImageLimit: 8192,
   imagesFolder: "images",
   imagesName: "[name]-[hash].[ext]",
@@ -45,8 +42,16 @@ const optimizedImagesConfig = {
   }
 };
 
-module.exports = withPlugins([
-  [withCSS, cssConfig],
-  [withOptimizedImages, optimizedImagesConfig],
-  nextConfiguration
-]);
+module.exports = withPlugins(
+  [
+    [withCSS, cssConfig],
+    [withOptimizedImages, optimizedImagesConfig],
+    nextConfiguration
+  ],
+  {
+    env: {
+      // Reference a variable that was defined in the .env file and make it available at Build Time
+      GITHUB_TOKEN: process.env.GITHUB_TOKEN
+    }
+  }
+);

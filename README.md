@@ -131,3 +131,5 @@ https://codeburst.io/next-js-on-cloud-functions-for-firebase-with-firebase-hosti
 https://github.com/jaydenseric/graphql-react
 
 https://github.com/rexxars/react-markdown
+
+https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app

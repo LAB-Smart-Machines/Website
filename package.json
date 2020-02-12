@@ -19,6 +19,7 @@
     "install-deps": "cd \"dist/functions\" && npm i"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "@zeit/next-css": "^1.0.1",
     "file-loader": "4.3.0",
     "firebase-admin": "^8.2.0",

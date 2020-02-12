@@ -126,3 +126,15 @@ const Historia_Texto = () => (
     participación internacional y publicación científica.
   </React.Fragment>
 );
+
+const GitHubColumna = ({ data }) => (
+  <div className="w-row">
+    <Columna titulo={"WARBOT"} subtitulo={"subtitulo"} img={warbot} />
+    <Columna
+      titulo={"bioreactor"}
+      subtitulo={"subtitulo"}
+      img={globo_estratosferico}
+    />
+    <Columna titulo={"cohetes"} subtitulo={"subtitulo"} img={cohetes} />
+  </div>
+);
