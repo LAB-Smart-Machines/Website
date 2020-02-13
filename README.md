@@ -1,12 +1,18 @@
-Usando ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting)
+Este website se realizó utilizando el ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting) y esta traducido al castellano en este README.
 
-[Website en progreso](https://smartctci.firebaseapp.com/)
+## Herramientas Utilizadas
 
-- [Diseño](https://smart-machines.webflow.io/)
-- Iconos FontAwesome
-- figuras Undraw
+📄 [Diseño hecho en webflow ](https://smart-machines.webflow.io/)
 
-# Hosting con Firebase
+💻 [Website en progreso](https://smartctci.firebaseapp.com/)
+
+🏁 [Iconos FontAwesome](https://fontawesome.com/)
+
+🙂 [Ilustraciones unDraw](https://undraw.co/)
+
+React, NextJS, GraphQL y Firebase
+
+# Hosting con Firebase (Traducción de [NextJS](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting))
 
 ## Como usar
 
@@ -20,17 +26,12 @@ npm create-next-app --example with-firebase-hosting with-firebase-hosting-app
 yarn create next-app --example with-firebase-hosting with-firebase-hosting-app
 ```
 
-<details>
-<summary><b>Bajalo manualmente</b></summary>
-
-Baja el ejemplo:
+O bajalo manualmente:
 
 ```bash
 curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-firebase-hosting
 cd with-firebase-hosting
 ```
-
-</details>
 
 <details>
 <summary><b>Preparar firebase</b></summary>
@@ -38,7 +39,7 @@ cd with-firebase-hosting
 - instalar Firebase Tools: `npm i -g firebase-tools`
 - crear un proyecto a traves del [firebase web console](https://console.firebase.google.com/)
 - copiar ID del proyecto de consola en este URL: `https://console.firebase.google.com/project/<projectId>`
-- actualizar el `.firebaserc` ID defecto `"web-id-aqui"` al el nuevo proyecto
+- actualizar el `.firebaserc` ID defecto `"web-id-aquí"` al el nuevo proyecto
 - iniciar sesion al Firebase CLI tool con `firebase login`
 
 </details>
@@ -46,11 +47,13 @@ cd with-firebase-hosting
 <details>
 <summary><b>Instalar Proyecto</b></summary>
 
+Más información sobre las diferentes etapas del desarrollo de una aplicación. [NextJS](https://nextjs.org/docs)
+
 ```bash
 npm install
 ```
 
-#### Ejecutar Next.js development:
+#### Ejecutar Next.js development localmente:
 
 ```bash
 npm run dev
@@ -80,56 +83,47 @@ npm run clean
 
 https://firebase.google.com/docs/functions/config-env
 
-## The idea behind the example
+## La idea detrás del ejemplo.
 
-The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
+El objetivo es alojar la aplicación Next.js en Firebase Cloud Functions con las reglas de reescritura de Firebase Hosting para que nuestra aplicación sea servida desde nuestra URL de Firebase Hosting. Cada `page` individual es llamada a la Cloud Function que realiza el procesamiento inicial del servidor.
 
-This is based off of the work at https://github.com/geovanisouza92/serverless-firebase & https://github.com/jthegedus/firebase-functions-next-example as described [here](https://medium.com/@jthegedus/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2).
+Esto trabajo esta basado en https://github.com/geovanisouza92/serverless-firebase y https://github.com/jthegedus/firebase-functions-next-example describido [aquí](https://medium.com/@jthegedus/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2).
 
-If you're having issues, feel free to tag @jthegedus in the [issue you create on the next.js repo](https://github.com/zeit/next.js/issues/new)
+Si tiene problemas, no dude en etiquetar a @jthegedus con el [tema que se crea en el next.js repo](https://github.com/zeit/next.js/issues/new)
 
 ## Important
 
-- The empty `placeholder.html` file is so Firebase Hosting does not error on an empty `public/` folder and still hosts at the Firebase project URL.
-- `firebase.json` outlines the catchall rewrite rule for our Cloud Function.
-- Specifying [`"engines": {"node": "8"}`](package.json#L5-L7) in the `package.json` is required for firebase functions
-  to be deployed on Node 8 rather than Node 6
-  ([Firebase Blog Announcement](https://firebase.googleblog.com/2018/08/cloud-functions-for-firebase-config-node-8-timeout-memory-region.html))
-  . This is matched in [`src/functions/.babelrc`](src/functions/.babelrc) so that babel output somewhat compacter and moderner code.
+- El archivo vacío `placeholder.html` es para que Firebase Hosting no se equivoque de la carpeta vacía`public/` y aún aloje el URL del proyecto Firebase.
+- `firebase.json` describe la regla de reescritura general para nuestra Cloud Function.
+- Se requiere especificar [`"engines": {"node":"8"}`](package.json#L5-L7) en el `package.json` para que las funciones de firebase se pueda implementarse con Node 8 en lugar del Node 6 ([Anuncio en el blog de Firebase](https://firebase.googleblog.com/2018/08/cloud-functions-for-firebase-config-node-8-timeout-memory-region.html)). Esto esta emparejado en [`src/functions/.babelrc`](src/functions/.babelrc) para que babel genere un código algo más compacto y moderno.
 
-### Customization
+### Personalización
 
-Next App and Next Server development are separated into two different folders:
+El desarrollo de Next App y Next Server se divide en dos carpetas diferentes:
 
 - app - `src/app/`
 - server - `src/functions/`
 
-If you wish to modify any configuration of the Next App, you should only modify the contents of `src/app`.
+Si desea modificar cualquier configuración del Next App, solo debe modificar el contenido de `src/app`.
 
-For instance, the `.babelrc` in `src/functions` is used only to compile the Firebase Cloud Functions code, which is our the Next Server code. If you wish to customize the `.babelrc` for the Next App compilation, then you should create one at `src/app/.babelrc` and follow the [customization guide](https://github.com/zeit/next.js#customizing-babel-config).
+Por ejemplo, el `.babelrc` en`src/functions` se usa solo para compilar el código de Firebase Cloud Functions, que es nuestro código de Next Server. Si desea personalizar el `.babelrc` para la compilación Next App, debe crear uno en`src/app/.babelrc` y seguir la [guía de personalización](https://github.com/zeit/next.js#personalización-babel-config).
 
 ### \_app.js
 
-If using `_app.js` you may receive the following error on your deployed Cloud Function:
+Si usas `_app.js`, puede recibir el siguiente error en su 'Cloud Function' implementada:
 
 ```
 { Error: Cannot find module '@babel/runtime/regenerator'...
 ```
 
-Despite next.js having `@babel/runtime` as a dependency, you must install it as a dependency directly in this project.
+A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo como dependencia directamente en este proyecto.
 
-### Issues
+# Otros articulos para leer
 
-- [object Module] in css files with svg files
-  https://github.com/cyrilwanner/next-optimized-images/issues/124
+- https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
 
-- Firebase is retuning 404 for files in the /static folder
-  https://github.com/zeit/next.js/issues/5944
+- https://github.com/jaydenseric/graphql-react
 
-https://codeburst.io/next-js-on-cloud-functions-for-firebase-with-firebase-hosting-7911465298f2
+- https://github.com/rexxars/react-markdown
 
-https://github.com/jaydenseric/graphql-react
-
-https://github.com/rexxars/react-markdown
-
-https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
+- https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
