@@ -439,23 +439,27 @@ mark {
 /* README */
 .readme {
   text-align: initial;
+  line-height: 1.5;
 }
 
 .readme h1 {
   text-transform: uppercase;
   text-align: center;
-  margin-top: 7px;
-
-  font-size: 44px;
-  line-height: 55px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: "Abril Fatface", cursive;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
 }
 
 .readme ul {
   font-size: 15px;
 }
 
+.readme h2 {
+  text-align: left;
+}
 .readme h3 {
   margin-top: 15px;
   font-size: 20px;
@@ -472,4 +476,14 @@ mark {
   line-height: 0.85em;
   background-color: #040406;
   color: #fff;
+}
+
+.readme code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-family: Consolas;
+  word-wrap: break-word;
 }

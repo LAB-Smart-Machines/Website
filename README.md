@@ -91,7 +91,7 @@ Esto trabajo esta basado en https://github.com/geovanisouza92/serverless-firebas
 
 Si tiene problemas, no dude en etiquetar a @jthegedus con el [tema que se crea en el next.js repo](https://github.com/zeit/next.js/issues/new)
 
-## Important
+## Importante
 
 - El archivo vacío `placeholder.html` es para que Firebase Hosting no se equivoque de la carpeta vacía`public/` y aún aloje el URL del proyecto Firebase.
 - `firebase.json` describe la regla de reescritura general para nuestra Cloud Function.
