@@ -4,39 +4,20 @@ import ReactMarkdown from "react-markdown";
 import { useGraphQL } from "graphql-react";
 
 const GraphQLData = ({ queryString, repoString }) => {
-  // The useGraphQL hook can be used just the same for queries or mutations.
-  // El hook useGraphQL se puede usar de la misma manera para queries o mutaciones.
+  // El hook useGraphQL se puede usar de la misma manera para consultas o mutaciones.
   const { loading, cacheValue = {} } = useGraphQL({
-    // Any GraphQL API can be queried in components, where fetch options for
-    // the URL, auth headers, etc. are specified. To avoid repetition it’s a
-    // good idea to import the fetch options override functions for the APIs
-    // your app uses from a central module. The default fetch options received
-    // by the override function are tailored to the operation; typically the
-    // body is JSON but if there are files in the variables it will be a
-    // FormData instance for a GraphQL multipart request.
-
-    // Cualquier API GraphQL puede consultarse en componentes, donde buscar opciones para
-    // se especifican la URL, los encabezados de autenticación, etc. Para evitar la repetición es un
-    // buena idea importar las funciones de anulación de funciones de recuperación para las API
-    // tu aplicación usa desde un módulo central. Las opciones de recuperación predeterminadas recibidas
-    // por la función de anulación se adaptan a la operación; típicamente el
-    // el cuerpo es JSON pero si hay archivos en las variables será un
-    // Instancia FormData para una solicitud de múltiples partes GraphQL.
+    // Cualquier API GraphQL puede consultarse en componentes, donde las opciones de fetch para el URL,
+    // autenticación, etc. son especificados. Las opciones de recuperación predeterminadas recibidas
+    // por la función de anulación se adaptan a la operación; típicamente
+    // el cuerpo es JSON.
 
     fetchOptionsOverride(options) {
-      // console.log(functions.config().test.one);
-
       options.url = "https://api.github.com/graphql";
       options.headers["Authorization"] = `Bearer ${process.env.GITHUB_TOKEN}`;
     },
-
-    // The operation typically contains `query` and sometimes `variables`, but
-    // additional properties can be used; all are JSON encoded and sent to the
-    // GraphQL server in the fetch request body.
-
     // La operación típicamente contiene `query` y algunas veces` variables`, pero
-    // se pueden usar propiedades adicionales; todos están codificados en JSON y se envían a
-    // Servidor GraphQL en el cuerpo de solicitud de búsqueda.
+    // se pueden usar propiedades adicionales; todos están codificados en JSON y se envían al
+    // servidor GraphQL en el cuerpo de solicitud de búsqueda.
     operation: {
       query:
         `{
@@ -62,9 +43,9 @@ const GraphQLData = ({ queryString, repoString }) => {
     // queries to display content, but not for on demand situations like
     // pagination view more buttons or forms that submit mutations.
 
-    // Cargue la consulta cada vez que se monte el componente. Esto es deseable para
-    // consultas para mostrar contenido, pero no para situaciones bajo demanda como
-    // paginación ver más botones o formularios que envían mutaciones.
+    // Cargue la consulta cada vez que se monte el componente. Esto es deseable para mostrar contenido,
+    // pero no para situaciones bajo demanda como paginación ver
+    // más botones o formularios que envían mutaciones.
     loadOnMount: true,
 
     // Reload the query whenever a global cache reload is signaled.

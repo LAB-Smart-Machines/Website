@@ -81,10 +81,14 @@ npm run clean
 
 ## Variables
 
-Se requiere un token de acceso personal para autenticar y acceder el contenido del usuario.
+Se requiere un token de acceso personal para autenticar y acceder el contenido del usuario. Si no tienes el token, se necesita crear uno nuevo. Lee mas [aquí](https://help.github.com/es/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
 
-Si no tienes el token, se necesita crear uno nuevo. Lee mas [aquí](https://help.github.com/es/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
-Despues de haber copiado el nuevo token, no te olvides de ponerlo en tu archivo `.env`.
+Despues de haber copiado el nuevo token, no te olvides de ponerlo en tu archivo `.env` en el directorio raíz de su proyecto. Agregar variables específicas en forma de [NOMBRE = VALOR](https://www.npmjs.com/package/dotenv).
+Es requerido tener `GITHUB_TOKEN` en `.env`:
+
+```
+GITHUB_TOKEN = xxxxxxxxxxxxxxxxxxxxxxx
+```
 
 ❗ _Mantener seguro tu cuenta y tus datos. Como precaución de seguridad, archivos `.env` deben estar anadidos a tu `.gitignore`_
 
