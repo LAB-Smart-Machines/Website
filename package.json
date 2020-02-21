@@ -1,7 +1,7 @@
 {
-  "name": "with-firebase-hosting",
+  "name": "SMARTMACHINES-FIREBASE-NEXTJS",
   "version": "4.0.1",
-  "description": "Host Next.js SSR app on Firebase Cloud Functions with Firebase Hosting redirects.",
+  "description": "Host Next.js SSR app en Firebase Cloud Functions.",
   "engines": {
     "node": "8"
   },

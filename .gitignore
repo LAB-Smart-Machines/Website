@@ -1,3 +1,5 @@
+# Aqui se ponen los archivos que NO deseas subir a tu repo
+
 # Firebase cache
 .firebase/
 

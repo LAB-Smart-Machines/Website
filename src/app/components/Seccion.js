@@ -1,6 +1,6 @@
 import * as React from "react";
 
-// stateless componente
+//  componente stateless
 const Seccion = ({
   claseSeccion,
   claseHeading,

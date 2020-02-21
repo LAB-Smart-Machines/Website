@@ -1,5 +1,4 @@
 import * as React from "react";
-import Link from "next/link";
 
 const Columna = ({ img, titulo, subtitulo, github }) => (
   <div className="w-col w-col-4 w-col-small-4">
@@ -23,10 +22,3 @@ const Columna = ({ img, titulo, subtitulo, github }) => (
 );
 
 export default Columna;
-
-// https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
-const PostLink = props => (
-  <Link href={`/proyecto?titulo=${props.titulo.toUpperCase()}`}>
-    <a className="nav-link w-nav-link">{props.titulo}</a>
-  </Link>
-);

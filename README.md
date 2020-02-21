@@ -81,7 +81,14 @@ npm run clean
 
 ## Variables
 
-https://firebase.google.com/docs/functions/config-env
+Se requiere un token de acceso personal para autenticar y acceder el contenido del usuario.
+
+Si no tienes el token, se necesita crear uno nuevo. Lee mas [aquí](https://help.github.com/es/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
+Despues de haber copiado el nuevo token, no te olvides de ponerlo en tu archivo `.env`.
+
+❗ _Mantener seguro tu cuenta y tus datos. Como precaución de seguridad, archivos `.env` deben estar anadidos a tu `.gitignore`_
+
+❗ **_Advertencia: Preserva tus tokens de la misma manera que tus contraseñas y no se las reveles a nadie. Cuando trabajes con la API, usa tokens como variables del entorno en lugar de codificarlos de forma rígida en tus programas._**
 
 ## La idea detrás del ejemplo.
 
@@ -93,7 +100,7 @@ Si tiene problemas, no dude en etiquetar a @jthegedus con el [tema que se crea e
 
 ## Importante
 
-- El archivo vacío `placeholder.html` es para que Firebase Hosting no se equivoque de la carpeta vacía`public/` y aún aloje el URL del proyecto Firebase.
+- El archivo vacío `placeholder.html` es para que Firebase Hosting no se equivoque de la carpeta vacía `public/` y aún aloje el URL del proyecto Firebase.
 - `firebase.json` describe la regla de reescritura general para nuestra Cloud Function.
 - Se requiere especificar [`"engines": {"node":"8"}`](package.json#L5-L7) en el `package.json` para que las funciones de firebase se pueda implementarse con Node 8 en lugar del Node 6 ([Anuncio en el blog de Firebase](https://firebase.googleblog.com/2018/08/cloud-functions-for-firebase-config-node-8-timeout-memory-region.html)). Esto esta emparejado en [`src/functions/.babelrc`](src/functions/.babelrc) para que babel genere un código algo más compacto y moderno.
 

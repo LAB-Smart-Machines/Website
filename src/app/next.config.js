@@ -6,6 +6,8 @@ const withImages = require("next-images");
 
 const cssConfig = { distDir: "../../dist/functions/next" };
 
+// configuracion de nextjs
+// https://github.com/webpack-contrib/url-loader
 const nextConfiguration = {
   test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
   loader: "url-loader?limit=100000",
@@ -50,7 +52,7 @@ module.exports = withPlugins(
   ],
   {
     env: {
-      // Reference a variable that was defined in the .env file and make it available at Build Time
+      // Hacer una referencia a un variable que se definió en el archivo .env y ponerlo a accesible en Build Time
       GITHUB_TOKEN: process.env.GITHUB_TOKEN
     }
   }

@@ -24,7 +24,7 @@ const Page = () => {
 
 export default Page;
 
-// Zero config GraphQL client that manages the cache.
+// GraphQL cliente
 const graphql = new GraphQL();
 const GQL = ({ queryString, repoString }) => {
   return (

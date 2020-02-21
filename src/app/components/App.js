@@ -13,7 +13,7 @@ const App = ({ children }) => (
         content="initial-scale=1.0, width=device-width"
         key="viewport"
       />
-      {/* <!-- Icon in the highest resolution we need it for --> */}
+      {/* <!-- Icono --> */}
       <link rel="icon" sizes="192x192" href={favicon}></link>
       {/* {Google Fonts} */}
       <link
