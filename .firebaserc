@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "smartctci"
+    "default": "lab-smart-machines",
+    "prod": "lab-smart-machines"
   }
 }

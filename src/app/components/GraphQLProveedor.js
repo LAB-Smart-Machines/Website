@@ -39,40 +39,25 @@ const GraphQLData = ({ queryString, repoString }) => {
       `
     },
 
-    // Load the query whenever the component mounts. This is desirable for
-    // queries to display content, but not for on demand situations like
-    // pagination view more buttons or forms that submit mutations.
-
     // Cargue la consulta cada vez que se monte el componente. Esto es deseable para mostrar contenido,
     // pero no para situaciones bajo demanda como paginación ver
     // más botones o formularios que envían mutaciones.
     loadOnMount: true,
 
-    // Reload the query whenever a global cache reload is signaled.
-
-    // Vuelva a cargar la consulta cada vez que se indique una recarga de caché global.
+    // Vuelva a cargar la consulta cada vez que se indique una recarga de cache.
     loadOnReload: true,
 
-    // Reload the query whenever the global cache is reset. Resets immediately
-    // delete the cache and are mostly only used when logging out the user.
-
-    // Vuelva a cargar la consulta cada vez que se restablezca la memoria caché global. Restablece de inmediato
-    // elimina el caché y se usa principalmente cuando se cierra la sesión del usuario.
+    // Vuelva a cargar la consulta cada vez que se restablezca la memoria caché global.
+    // Restablece de inmediato elimina el caché y se usa principalmente cuando se
+    // cierra la sesión del usuario.
     loadOnReset: true
   });
   return cacheValue.data ? (
     <ReadMe data={cacheValue.data.repository} />
   ) : loading ? (
-    // Data is often reloaded, so don’t assume loading indicates no data.
-
     // Los datos a menudo se vuelven a cargar, por lo que no asuma que la carga indica que no hay datos.
     "Cargando…"
   ) : (
-    // Detailed error info is available in the `cacheValue` properties
-    // `fetchError`, `httpError`, `parseError` and `graphQLErrors`. A combination
-    // of errors is possible, and an error doesn’t necessarily mean data is
-    // unavailable.
-
     // La información detallada del error está disponible en las propiedades `cacheValue`
     // `fetchError`,` httpError`, `parseError` y` graphQLErrors`. Una combinación
     // de errores es posible, y un error no significa necesariamente que los datos sean
