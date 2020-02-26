@@ -139,4 +139,4 @@ A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo
 
 - https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
 
-Traducido por Google y @vahurtad
+Traducido por Google y [@vahurtad](https://github.com/vahurtad)
