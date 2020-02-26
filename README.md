@@ -14,7 +14,7 @@ React, NextJS, GraphQL y Firebase
 
 # Hosting con Firebase (Traducción de [NextJS](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting))
 
-## Como usar
+## Como usar 💻
 
 **Usando `create-next-app`**
 
@@ -79,7 +79,7 @@ npm run clean
 
 </details>
 
-## Variables
+## Variables 🔎
 
 Se requiere un token de acceso personal para autenticar y acceder el contenido del usuario. Si no tienes el token, se necesita crear uno nuevo. Lee mas [aquí](https://help.github.com/es/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
 
@@ -94,7 +94,7 @@ GITHUB_TOKEN = xxxxxxxxxxxxxxxxxxxxxxx
 
 ❗ **_Advertencia: Preserva tus tokens de la misma manera que tus contraseñas y no se las reveles a nadie. Cuando trabajes con la API, usa tokens como variables del entorno en lugar de codificarlos de forma rígida en tus programas._**
 
-## La idea detrás del ejemplo.
+## La idea detrás del ejemplo. 💡
 
 El objetivo es alojar la aplicación Next.js en Firebase Cloud Functions con las reglas de reescritura de Firebase Hosting para que nuestra aplicación sea servida desde nuestra URL de Firebase Hosting. Cada `page` individual es llamada a la Cloud Function que realiza el procesamiento inicial del servidor.
 
@@ -102,7 +102,7 @@ Esto trabajo esta basado en https://github.com/geovanisouza92/serverless-firebas
 
 Si tiene problemas, no dude en etiquetar a @jthegedus con el [tema que se crea en el next.js repo](https://github.com/zeit/next.js/issues/new)
 
-## Importante
+## Importante 📌
 
 - El archivo vacío `placeholder.html` es para que Firebase Hosting no se equivoque de la carpeta vacía `public/` y aún aloje el URL del proyecto Firebase.
 - `firebase.json` describe la regla de reescritura general para nuestra Cloud Function.
@@ -129,7 +129,7 @@ Si usas `_app.js`, puede recibir el siguiente error en su 'Cloud Function' imple
 
 A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo como dependencia directamente en este proyecto.
 
-# Otros articulos para leer
+# Otros articulos para leer 📖
 
 - https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
 
@@ -138,3 +138,5 @@ A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo
 - https://github.com/rexxars/react-markdown
 
 - https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
+
+Traducido por Google y @vahurtad
