@@ -4,7 +4,7 @@ Este website se realizó utilizando el ejemplo de [NextJS con Firebase Hosting](
 
 📄 [Diseño hecho en webflow ](https://smart-machines.webflow.io/)
 
-💻 [Website en progreso](https://smartctci.firebaseapp.com/)
+💻 [Website en progreso](https://lab-smart-machines.firebaseapp.com/)
 
 🏁 [Iconos FontAwesome](https://fontawesome.com/)
 
