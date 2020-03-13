@@ -98,9 +98,13 @@ p {
   min-height: 1px;
   padding-left: 10px;
   padding-right: 10px;
+  padding: 10px;
 }
 .w-col-4 {
   width: 33.33333333%;
+}
+.w-col-4.miembros {
+  width: 50%;
 }
 @media screen and (max-width: 991px) {
   .w-container {
@@ -120,6 +124,10 @@ p {
   }
   .w-col-small-4 {
     width: 33.33333333%;
+  }
+
+  .w-col-small-4.miembros {
+    width: 50%;
   }
 }
 @media screen and (max-width: 479px) {

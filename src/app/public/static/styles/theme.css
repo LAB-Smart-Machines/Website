@@ -28,6 +28,13 @@ h2 {
   text-transform: uppercase;
 }
 
+.h2-miembros {
+  font-family: "Raleway", sans-serif;
+}
+.miembro-title {
+  font-size: 18px;
+}
+
 h3 {
   margin: 0px 0px 20px;
   font-size: 16px;
@@ -320,6 +327,9 @@ mark {
   .nav-menu {
     background-color: #f5f5f5;
   }
+  .miembro-img {
+    width: 229.3333282470703px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -360,6 +370,9 @@ mark {
   }
   .menu-button {
     margin-top: 0px;
+  }
+  .miembro-img {
+    width: 29vw;
   }
 }
 
@@ -485,4 +498,8 @@ mark {
   border-radius: 3px;
   font-family: Consolas;
   word-wrap: break-word;
+}
+
+.miembro-img {
+  width: 300px;
 }
