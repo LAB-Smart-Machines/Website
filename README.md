@@ -1,5 +1,7 @@
 Este website se realizó utilizando el ejemplo de [NextJS con Firebase Hosting](https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting) y esta traducido al castellano en este README.
 
+Tambien se uso ejemplos de [`styled-components`](https://github.com/zeit/next.js/tree/master/examples/with-styled-components) y [`graphql`](https://github.com/zeit/next.js/tree/master/examples/with-graphql-react)
+
 ## Herramientas Utilizadas
 
 📄 [Diseño hecho en webflow ](https://smart-machines.webflow.io/)

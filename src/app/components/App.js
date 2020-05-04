@@ -17,10 +17,9 @@ const App = ({ children }) => (
       <link rel="icon" sizes="192x192" href={favicon}></link>
       {/* {Google Fonts} */}
       <link
-        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway:400,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Raleway:wght@400;500&display=swap"
         rel="stylesheet"
-      />
-      >
+      ></link>
     </Head>
 
     <main>

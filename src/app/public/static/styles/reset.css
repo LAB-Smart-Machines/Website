@@ -194,14 +194,14 @@ p {
   user-select: none;
 }
 @media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {
-    display: none;
-  }
   .w-nav[data-collapse="medium"] .w-nav-button {
     display: block;
   }
 }
 @media screen and (max-width: 767px) {
+  .w-nav[data-collapse="medium"] .w-nav-menu {
+    display: none;
+  }
   .w-nav-brand {
     padding-left: 10px;
   }

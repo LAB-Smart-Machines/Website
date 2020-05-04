@@ -36,7 +36,7 @@ const GraphQLData = ({ queryString, repoString }) => {
             }
           }
         }
-      `
+      `,
     },
 
     // Cargue la consulta cada vez que se monte el componente. Esto es deseable para mostrar contenido,
@@ -50,7 +50,7 @@ const GraphQLData = ({ queryString, repoString }) => {
     // Vuelva a cargar la consulta cada vez que se restablezca la memoria caché global.
     // Restablece de inmediato elimina el caché y se usa principalmente cuando se
     // cierra la sesión del usuario.
-    loadOnReset: true
+    loadOnReset: true,
   });
   return cacheValue.data ? (
     <ReadMe data={cacheValue.data.repository} />
@@ -78,5 +78,5 @@ const ReadMe = ({ data }) =>
       />
     </section>
   ) : (
-    "Error"
+    "No hay nada aqui..."
   );

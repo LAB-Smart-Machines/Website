@@ -8,6 +8,7 @@ const Columna = ({ img, titulo, subtitulo, github }) => (
         className="project-wrapper w-inline-block"
       >
         <img
+          // src={`_next/static/images/${img}.jpeg`}
           src={img}
           sizes="(max-width: 479px) 96vw, (max-width: 767px) 29vw, (max-width: 991px) 229.3333282470703px, 300px"
           alt={`foto de proyecto ${titulo}`}

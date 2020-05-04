@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import Link from "next/link";
 
 import sortDown from "../images/sort-down-solid.svg";
-
+import PROYECTOS from "../../../PROYECTOS.json";
+// TODO: change menu to use json data
 class Menu extends Component {
   constructor() {
     super();
 
     this.state = {
-      showMenu: false
+      showMenu: false,
     };
 
     this.showMenu = this.showMenu.bind(this);
@@ -46,12 +47,15 @@ class Menu extends Component {
         ></img>
         {this.state.showMenu ? (
           <ul className="ul-dropdown">
-            <PostLink titulo={"Cansat Rover"} />
-            <PostLink titulo={"GLOBO ESTRATOSFÉRICO"} />
-            <PostLink titulo={"Cansat Telemtery"} />
-            <PostLink titulo={"Warbot"} />
-            <PostLink titulo={"Bioreactor"} />
-            <PostLink titulo={"Cohetes"} />
+            {PROYECTOS.proyecto.map((proyecto, i) => {
+              return (
+                <PostLink
+                  titulo={proyecto.titulo}
+                  github={proyecto.github}
+                  key={i}
+                />
+              );
+            })}
           </ul>
         ) : null}
       </div>
@@ -62,9 +66,9 @@ class Menu extends Component {
 export default Menu;
 
 // https://nextjs.org/learn/basics/create-dynamic-pages/passing-data
-const PostLink = props => (
+const PostLink = (props) => (
   <li className="li-dropdown">
-    <a href={`/proyecto?titulo=${props.titulo.toUpperCase()}`}>
+    <a href={`/proyecto?titulo=${props.github.toUpperCase()}`}>
       {props.titulo}
     </a>
   </li>

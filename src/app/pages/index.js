@@ -8,6 +8,7 @@ import rover from "../images/ctic_cansat_rover.jpeg";
 import globo_estratosferico from "../images/ctic_GLOBO_ESTRATOSFÉRICO.jpeg";
 import warbot from "../images/ctic_warbot.jpeg";
 import cohetes from "../public/static/images/ctic_cohetes.jpeg";
+import PROYECTOS from "../../../PROYECTOS.json";
 
 export default () => (
   <App>
@@ -41,73 +42,26 @@ export default () => (
         <h2 className="heading-3">Proyectos</h2>
         <div className="divider grey"></div>
         {/* primera fila */}
-        <div className="w-row">
-          <Columna
-            titulo={"Cansat Rover"}
-            subtitulo={"subtitulo"}
-            img={rover}
-            github={"Cansat Rover"}
-          />
-          <Columna
-            titulo={"GLOBO ESTRATOSFÉRICO"}
-            subtitulo={"subtitulo"}
-            img={globo_estratosferico}
-            github={"GLOBO ESTRATOSFÉRICO"}
-          />
-          <Columna
-            titulo={"cansat telemetry"}
-            subtitulo={"subtitulo"}
-            img={telemetry}
-            github={"cansat telemetry"}
-          />
-        </div>
-        {/* segunda fila */}
-        <div className="w-row">
-          <Columna
-            titulo={"WARBOT"}
-            subtitulo={"subtitulo"}
-            img={warbot}
-            github={"Warbot"}
-          />
-          <Columna
-            titulo={"bioreactor"}
-            subtitulo={"subtitulo"}
-            img={globo_estratosferico}
-            github={"bioreactor"}
-          />
-          <Columna
-            titulo={"cohetes"}
-            subtitulo={"subtitulo"}
-            img={cohetes}
-            github={"cohetes"}
-          />
-        </div>
-        {/* tercera fila */}
-        <div className="w-row">
-          <Columna
-            titulo={"WARBOT"}
-            subtitulo={"subtitulo"}
-            img={warbot}
-            github={"Warbot"}
-          />
-          <Columna
-            titulo={"bioreactor"}
-            subtitulo={"subtitulo"}
-            img={globo_estratosferico}
-            github={"bioreactor"}
-          />
-          <Columna
-            titulo={"Test Uno"}
-            subtitulo={"subtitulo"}
-            img={cohetes}
-            github={"testuno"}
-          />
-        </div>
+
+        {PROYECTOS.proyecto.map((proyecto, i) => {
+          return i % 4 > 0 ? (
+            <Columna
+              key={i}
+              titulo={proyecto.titulo}
+              subtitulo={proyecto.subtitulo}
+              img={require("../images/" + proyecto.img + ".jpeg")}
+              github={proyecto.github}
+            />
+          ) : (
+            <div className="w-row"></div>
+          );
+        })}
       </div>
     </div>
   </App>
 );
 
+// TODO: put this text into json style
 const mision_texto = `El laboratorio de investigación Smart machines es un centro cuyo
 propósito es desarrollar investigación básica y aplicada en el campo
 aeroespacial y robótica aplicada, que contribuya a los esfuerzos de la
@@ -150,16 +104,4 @@ const Historia_Texto = () => (
     challenge, cohete experimental y globo estratosférico con fines de
     participación internacional y publicación científica.
   </React.Fragment>
-);
-
-const GitHubColumna = ({ data }) => (
-  <div className="w-row">
-    <Columna1 titulo={"TestUno"} subtitulo={"subtitulo"} img={warbot} />
-    <Columna1
-      titulo={"bioreactor1"}
-      subtitulo={"subtitulo"}
-      img={globo_estratosferico}
-    />
-    <Columna1 titulo={"cohetes1"} subtitulo={"subtitulo"} img={cohetes} />
-  </div>
 );
