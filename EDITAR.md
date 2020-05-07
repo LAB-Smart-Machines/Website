@@ -7,6 +7,16 @@ Tenemos 2 archivos de contenido:
 
 Aqui contiene datos como el titulo, subtitulo, o contenido de otras secciones.
 
+```javascript
+{
+  "titulo_principal": "Laboratorio Smart Machines",
+  "subtexto_principal":  ___opcional__,
+  "titulo_primera_seccion": "Mision",
+  "subtexto_primera_seccion": ___opcional__,
+  "titulo_segunda_seccion": "Historia",
+  "subtexto_segunda_seccion":  ___opcional__,
+```
+
 ## Proyecto
 
 Aqui contiene datos de cada proyecto.
