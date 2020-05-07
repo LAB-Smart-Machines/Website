@@ -143,6 +143,6 @@ A pesar de que next.js tiene `@ babel/runtime` como dependencia, debes instalarl
 
 Traducido por Google y [@vahurtad](https://github.com/vahurtad)
 
-### [Como edito la pagina principal?](src/EDITAR.md) ✏
+### [Como edito la pagina principal?](/EDITAR.md) ✏
 
 ### [Como uso Markdown?](src/app/pages/README.md) 📃
