@@ -90,7 +90,6 @@ const StyledMenu = styled.nav`
     }
   }
 `;
-// TODO: change menu to use json data
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import sortDown from "../images/sort-down-solid.svg";
 import PROYECTOS from "../../../PROYECTOS.json";
-// TODO: change menu to use json data
+// usando data de json PROYECTOS
 class Menu extends Component {
   constructor() {
     super();

@@ -88,8 +88,8 @@ Se requiere un token de acceso personal para autenticar y acceder el contenido d
 Despues de haber copiado el nuevo token, no te olvides de ponerlo en tu archivo `.env` en el directorio raíz de su proyecto. Agregar variables específicas en forma de [NOMBRE = VALOR](https://www.npmjs.com/package/dotenv).
 Es requerido tener `GITHUB_TOKEN` en `.env`:
 
-```
-GITHUB_TOKEN = xxxxxxxxxxxxxxxxxxxxxxx
+```javascript
+GITHUB_TOKEN = xxxxxxxxxxxxxxxxxxxxxxx;
 ```
 
 ❗ _Mantener seguro tu cuenta y tus datos. Como precaución de seguridad, archivos `.env` deben estar anadidos a tu `.gitignore`_
@@ -119,17 +119,17 @@ El desarrollo de Next App y Next Server se divide en dos carpetas diferentes:
 
 Si desea modificar cualquier configuración del Next App, solo debe modificar el contenido de `src/app`.
 
-Por ejemplo, el `.babelrc` en`src/functions` se usa solo para compilar el código de Firebase Cloud Functions, que es nuestro código de Next Server. Si desea personalizar el `.babelrc` para la compilación Next App, debe crear uno en`src/app/.babelrc` y seguir la [guía de personalización](https://github.com/zeit/next.js#personalización-babel-config).
+Por ejemplo, el `.babelrc` en`src/functions` se usa solo para compilar el código de Firebase Cloud Functions, que es nuestro código de Next Server. Si desea personalizar el `.babelrc` para la compilación Next App, debe crear uno en `src/app/.babelrc` y seguir la [guía de personalización](https://github.com/zeit/next.js#personalización-babel-config).
 
 ### \_app.js
 
-Si usas `_app.js`, puede recibir el siguiente error en su 'Cloud Function' implementada:
+Si usas `_app.js`, puedes recibir el siguiente error de tu 'Cloud Function':
 
-```
+```javascript
 { Error: Cannot find module '@babel/runtime/regenerator'...
 ```
 
-A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo como dependencia directamente en este proyecto.
+A pesar de que next.js tiene `@ babel/runtime` como dependencia, debes instalarlo como dependencia directamente en este proyecto.
 
 # Otros articulos para leer 📖
 
@@ -142,3 +142,7 @@ A pesar de que next.js tiene `@ babel/runtime` como dependencia, debe instalarlo
 - https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
 
 Traducido por Google y [@vahurtad](https://github.com/vahurtad)
+
+### [Como edito la pagina principal?](src/EDITAR.md) ✏
+
+### [Como uso Markdown?](src/app/pages/README.md) 📃

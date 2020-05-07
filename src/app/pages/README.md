@@ -1,4 +1,4 @@
-Un ejemplo de como se puede ver el README de un proyecto esta [aquí](https://github.com/LAB-Smart-Machines/TestUno/blob/master/README.md) y en el website [aquí](http://localhost:3000/proyecto?titulo=testuno).
+Un ejemplo de como se puede ver el contenido del markdown de un proyecto esta [aquí](https://github.com/LAB-Smart-Machines/TestUno/blob/master/README.md) y en el website aparece [aquí](http://localhost:3000/proyecto?titulo=testuno).
 
 ## Como funciona
 
