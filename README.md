@@ -92,7 +92,7 @@ Accede a Firebase con tu Cuenta de Google ejecutando el siguiente comando:
 firebase login
 ```
 
-![Image of Logged In](readme-img\firebase_login.png)
+![Image of Logged In](readme-img/firebase_login.png)
 
 Este comando conecta tu máquina local a Firebase y te otorga acceso a los proyectos de Firebase.
 Nota: También puedes usar Firebase CLI con sistemas de IC.
@@ -111,7 +111,7 @@ Para implementar un proyecto de Firebase, ejecuta el siguiente comando desde el 
 npm run deploy
 ```
 
-![Image of Deployed Success](readme-img\firebase_deploy_success.png)
+![Image of Deployed Success](readme-img/firebase_deploy_success.png)
 
 #### Limpiar el folder dist
 
