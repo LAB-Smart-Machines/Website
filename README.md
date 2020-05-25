@@ -51,6 +51,8 @@ cd with-firebase-hosting
 
 Más información sobre las diferentes etapas del desarrollo de una aplicación. [NextJS](https://nextjs.org/docs)
 
+#### Instalar todo los packages
+
 ```bash
 npm install
 ```
@@ -67,17 +69,57 @@ npm run dev
 npm run serve
 ```
 
+</details><details>
+<summary><b>Desplagar Proyecto</b></summary>
+
 #### Despliegue en la nube (cloud) con Firebase:
+
+Antes de desplegar a la nube, es necesario autorizar y dar autenticación al proyecto que quieres subir.
+
+Ejecuta el siguiente comando para instalar Firebase CLI con npm:
+
+```
+npm install -g firebase-tools
+```
+
+#### Accede y prueba Firebase CLI
+
+Debes autenticarte después de instalar la CLI. Para confirmar la autenticación, puedes enumerar tus proyectos de Firebase.
+
+Accede a Firebase con tu Cuenta de Google ejecutando el siguiente comando:
+
+```
+firebase login
+```
+
+![Image of Logged In](readme-img\firebase_login.png)
+
+Este comando conecta tu máquina local a Firebase y te otorga acceso a los proyectos de Firebase.
+Nota: También puedes usar Firebase CLI con sistemas de IC.
+
+#### Prueba que la CLI esté instalada correctamente y que puedas acceder a tu cuenta. Para ello, enumera los proyectos de Firebase. Ejecuta el siguiente comando:
+
+```
+firebase list
+```
+
+La lista que se muestra debe ser la misma que los proyectos de Firebase enumerados en Firebase console.
+
+Para implementar un proyecto de Firebase, ejecuta el siguiente comando desde el directorio de tu proyecto:
 
 ```bash
 npm run deploy
 ```
+
+![Image of Deployed Success](readme-img\firebase_deploy_success.png)
 
 #### Limpiar el folder dist
 
 ```bash
 npm run clean
 ```
+
+Para mas informacion de Firebase, lo puedes ver [aqui](https://firebase.google.com/docs/cli#npm_1).
 
 </details>
 
