@@ -8,7 +8,7 @@ const Seccion = ({
   titulo,
   subTexto,
   botonHref,
-  botonTexto
+  botonTexto,
 }) => (
   <section className={claseSeccion}>
     {claseHeading === "main-heading" ? (

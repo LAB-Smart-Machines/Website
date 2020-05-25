@@ -75,7 +75,11 @@ const nuevaFila = (data) => {
             key={i}
             titulo={proyecto.titulo}
             subtitulo={proyecto.subtitulo}
-            img={require("../images/" + proyecto.img + ".jpeg")}
+            img={
+              proyecto.img
+                ? require("../images/" + proyecto.img)
+                : require("../images/undraw_scrum_board_cesn.png")
+            }
             github={proyecto.github}
           />
         );

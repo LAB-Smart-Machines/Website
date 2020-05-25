@@ -3,55 +3,52 @@
     {
       "titulo": "GLOBO ESTRATOSFÉRICO",
       "subtitulo": "subtitulo",
-      "img": "ctic_GLOBO_ESTRATOSFÉRICO",
+      "img": "ctic_GLOBO_ESTRATOSFÉRICO.jpeg",
       "github": "GLOBO ESTRATOSFÉRICO"
     },
     {
       "titulo": "Cansat Rover",
       "subtitulo": "subtitulo",
-      "img": "ctic_cansat_rover",
+      "img": "ctic_cansat_rover.jpeg",
       "github": "Cansat Rover"
     },
     {
       "titulo": "cansat telemetry",
       "subtitulo": "subtitulo",
-      "img": "ctic_cansat_telemetry",
+      "img": "ctic_cansat_telemetry.jpeg",
       "github": "cansat telemetry"
     },
     {
       "titulo": "WARBOT",
       "subtitulo": "subtitulo",
-      "img": "ctic_warbot",
+      "img": "ctic_warbot.jpeg",
       "github": "Warbot"
     },
     {
       "titulo": "bioreactor",
       "subtitulo": "subtitulo",
-      "img": "ctic_GLOBO_ESTRATOSFÉRICO",
       "github": "bioreactor"
     },
     {
       "titulo": "cohetes",
       "subtitulo": "subtitulo",
-      "img": "ctic_cohetes",
+      "img": "ctic_cohetes.jpeg",
       "github": "ctic_cohetes"
     },
     {
       "titulo": "WARBOT",
       "subtitulo": "subtitulo",
-      "img": "ctic_warbot",
+      "img": "ctic_warbot.jpeg",
       "github": "Warbot"
     },
     {
       "titulo": "bioreactor",
       "subtitulo": "subtitulo",
-      "img": "ctic_GLOBO_ESTRATOSFÉRICO",
       "github": "bioreactor"
     },
     {
       "titulo": "Test Uno",
       "subtitulo": "subtitulo",
-      "img": "ctic_cohetes",
       "github": "testuno"
     }
   ]

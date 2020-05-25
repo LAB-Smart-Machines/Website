@@ -21,7 +21,7 @@ Aqui contiene datos como el titulo, subtitulo, o contenido de otras secciones.
 
 Aqui contiene datos de cada proyecto.
 
-Si `img` no tiene un valor, entonces usamos una imagen local.
+Si `img` no es requrido pero usamos una imagen local `undraw_scrum_board_cesn.png`.
 
 ```javascript
 "proyecto": [

@@ -42,7 +42,7 @@ const Header = ({ pathname }) => {
             <Link href="/publicaciones">
               <a className="nav-link w-nav-link">PUBLICACIONES</a>
             </Link>
-            <Link href="#contact">
+            <Link href="/#contact">
               <a className="nav-link w-nav-link">CONTACTO</a>
             </Link>
           </header>

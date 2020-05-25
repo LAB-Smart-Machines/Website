@@ -1,6 +1,7 @@
 import * as React from "react";
 import App from "../components/App";
 import GraphQLProveedor from "../components/GraphQLProveedor";
+import Seccion from "../components/Seccion";
 
 import { useRouter } from "next/router";
 import { GraphQL, GraphQLProvider } from "graphql-react";
@@ -10,9 +11,14 @@ const Page = () => {
 
   return (
     <App>
+      <Seccion
+        claseSeccion={"header"}
+        claseHeading={"main-heading"}
+        claseSub={"main-subtitle"}
+        titulo={router.query.titulo}
+      />
       <div id="projects" className="section grey">
         <div className="w-container">
-          <h1 className="heading-3">{router.query.titulo}</h1>
           <div className="divider grey"></div>
           <GQL repoString={router.query.titulo} />
         </div>
