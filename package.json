@@ -3,7 +3,7 @@
   "version": "4.0.1",
   "description": "Host Next.js SSR app en Firebase Cloud Functions.",
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "scripts": {
     "dev": "next \"src/app/\"",

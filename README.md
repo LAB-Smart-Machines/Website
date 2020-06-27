@@ -100,7 +100,7 @@ Nota: También puedes usar Firebase CLI con sistemas de IC.
 #### Prueba que la CLI esté instalada correctamente y que puedas acceder a tu cuenta. Para ello, enumera los proyectos de Firebase. Ejecuta el siguiente comando:
 
 ```
-firebase list
+firebase projects:list
 ```
 
 La lista que se muestra debe ser la misma que los proyectos de Firebase enumerados en Firebase console.
